@@ -68,5 +68,6 @@ resource "aws_s3_bucket" "minio_backup" {
   ...
   force_destroy = true
   ...
+}
 ```
 현재 코드는 위 명령을 추가하여 `terraform destroy` 시 버킷 내부 객체 여부에 상관없이 지워지도록 구성되어 있다.
